@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rateb</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="resource/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <p class="navbar-text navbar-right"><span class="label label-primary">Ver 1.0</span></p>
+        <h3 class="text-muted">Rateb</h3>
+      </div>
+      <div class="row marketing">
+        <div class="col-lg-9">
+          <div class="well"><center>Calculate days remaining for the next salary <small>(the fifth of the solar hijri month)</small></center></div>
+          <h4>About</h4>
+          <p>Based on the Saudi Arabia's Cabinet decision number 551 (<a href="http://spa.gov.sa/1548873" target="_blank">link</a>). The fifth of every solar hijri month is the official payday for government employees.</p>
+          <h4>How it's work</h4>
+          <p>Since Umm al qura solar differ from Persian solar, and iPhone SDK only support the Persian solar in <code>NSDate</code>, the dates was scraped from <a href="http://www.ummulqura.org.sa/" target="_blank">link</a> and hard coded inside the app as json file.</p>
+          <p>The scraping done using a forked version of <a href="https://twitter.com/engineer_fouad" target="_blank">@engineer_fouad</a> "<a href="https://github.com/kaluaim/Hijri-Gregorian-Solar_Hijri" target="_blank">Hijri-Gregorian-Solar_Hijri</a>. The modification done on it is to produce limited size json file instead of complete CSV file to reduce size and for easy deserialization.</p>
+          <h4>Screenshots</h4>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="img-responsive" src="resource/img/screenshot_1.png">
+            </div>
+            <div class="col-lg-6">
+              <img class="img-responsive" src="resource/img/screenshot_2.png">
+            </div>
+          </div>
+          <br/>
+          <h4>Features:</h4>
+          <ul>
+            <li>Calculate days remaining for the next salary.</li>
+            <li>localization; English (default) and Arabic, based on device selected language.</li>
+          </ul>
+          <br/>
+          <h4>ToDo (upcoming features):</h4>
+          <ul>
+            <li>Local notification a day before the payday.</li>
+            <li>Widget to display the countdown number.</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <img class="img-responsive" src="resource/img/icon.png">
+          <br>
+          <a href="https://itunes.apple.com/us/app/rateb-ratb/id1166102498?ls=1&mt=8" target="_blank" ><img src="resource/img/app_store.png" class="img-responsive"></a>
+          <hr/>
+          <h4>Author</h4>
+          <a href="http://kalua.im/">@kaluaim</a>
+          <h4>Source Code</h4>
+          <a href="https://github.com/kaluaim/rateb-ios" target="_blank">GitHub</a>
+          <hr/>
+          <div class="panel panel-default">
+            <div class="panel-heading"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> License</h3> </div>
+            <div class="panel-body">
+              <p class="text-muted"><small><strong>Twitter Plunger</strong> is licensed under the MIT License.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Rateb, Apple iOS app.</p>
+        </div>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../analytics.js"></script>
+  </body>
+</html>
