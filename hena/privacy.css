@@ -1,0 +1,91 @@
+.policy-page {
+    max-width: 640px;
+    padding: 2rem 1.5rem 4rem;
+    align-items: flex-start;
+    text-align: start;
+}
+
+html[dir="rtl"] .policy-page {
+    text-align: start;
+}
+
+.app-icon-sm {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(124, 92, 255, 0.15);
+    margin-bottom: 1rem;
+}
+
+.policy-page h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.last-updated {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.policy-content section {
+    margin-bottom: 1.75rem;
+}
+
+.policy-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--fg);
+    margin-bottom: 0.5rem;
+}
+
+.policy-content p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.policy-content a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.policy-content a:hover {
+    text-decoration: underline;
+}
+
+.policy-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.policy-content ul li {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.7;
+    padding-inline-start: 1rem;
+    position: relative;
+}
+
+.policy-content ul li::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0.7em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+}
